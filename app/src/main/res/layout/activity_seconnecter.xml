@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".seconnecter">
+
+    <include layout="@layout/entete" />
+    <!--image créer en entete-->
+
+
+    <TextView
+        android:labelFor="@+id/TV_seconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se Connecter"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="30dp"
+
+        />
+
+    <TextView
+        android:labelFor="@+id/TV_mailseconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Mail"/>
+
+    <EditText
+        android:id="@+id/mailseconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="exemple@email.com"
+        />
+    <TextView
+        android:labelFor="@+id/TV_mdpseconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Mot de passe"/>
+
+    <EditText
+        android:id="@+id/mdpseconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Entrez votre mot de passe"
+        />
+    <TextView
+        android:labelFor="@+id/TV_visiteurseconnecter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Code visiteur"/>
+
+    <EditText
+        android:id="@+id/codevisiteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Entrez votre code visiteur"
+        />
+    <Button
+        android:id="@+id/main_button_Seconnecter"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text=" Se Connecter"
+        android:textColor="#000"
+        android:backgroundTint="#B0F2B6"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="30dp"
+        tools:text="Mdp oublier? Créer un Compte"/>
+</LinearLayout>

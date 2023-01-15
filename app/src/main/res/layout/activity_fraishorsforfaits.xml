@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/entete" />
+    <!--image créer en entete-->
+
+
+    <TextView
+        android:labelFor="@+id/TV_fraishorsforfais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frais hors forfais"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:labelFor="@+id/TV_libelleFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        tools:text="Libellé"
+        />
+    <EditText
+        android:id="@+id/libelleFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre libellé"
+        />
+    <TextView
+        android:labelFor="@+id/TV_montantFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text=" Montant"/>
+
+    <EditText
+        android:id="@+id/montantFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir un montant"
+        />
+
+    <TextView
+        android:labelFor="@+id/TV_dateFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#B0F2B6"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text=" Date" />
+
+
+    <EditText
+        android:id="@+id/DateFHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="format JJ/MM/AAAA"
+        android:inputType="date"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        tools:context=".fraishorsforfaits"
+        >
+    <Button
+        android:id="@+id/main_button_modifier"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Modifier"
+        android:textColor="#000"
+        android:layout_margin="40dp"
+        android:backgroundTint="#D3D3D3"
+        />
+    <Button
+        android:id="@+id/main_button_supprimer"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_margin="8dp"
+        android:text="Supprimer"
+        android:textColor="#000"
+        android:backgroundTint="#D3D3D3"
+        />
+    </LinearLayout>
+    </LinearLayout >

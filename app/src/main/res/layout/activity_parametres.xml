@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".parametres">
+
+    <include layout="@layout/entete" />
+    <!--image créer en entete-->
+
+
+    <TextView
+        android:labelFor="@+id/TV_parametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paramètres"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:labelFor="@+id/TV_nomparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Nom:"/>
+
+    <EditText
+        android:id="@+id/nomparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre nom"
+        />
+    <TextView
+        android:labelFor="@+id/TV_prenomparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Prénom:"/>
+
+    <EditText
+        android:id="@+id/prenomparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre prénom"
+        />
+    <TextView
+        android:labelFor="@+id/TV_codevisiteurparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Code visiteur"/>
+
+    <EditText
+        android:id="@+id/codevisiteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre code visiteur"
+        />
+    <TextView
+        android:labelFor="@+id/TV_mailparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Mail"/>
+
+    <EditText
+        android:id="@+id/mailparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre mail"
+        />
+    <TextView
+        android:labelFor="@+id/TV_mdpparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text="Mot de passe"/>
+
+    <EditText
+        android:id="@+id/mdpparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre mdp"
+        />
+    <TextView
+        android:labelFor="@+id/TV_urlserveurparametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#B0F2B6"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        tools:text=" Url serveur"/>
+
+    <EditText
+        android:id="@+id/urlserveur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="7dp"
+        android:textColor="#B0F2B6"
+        android:hint="Saisir votre url"
+        />
+    <Button
+        android:id="@+id/main_button_confirmerparamètres"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text=" Confirmer"
+        android:textColor="#000"
+        android:backgroundTint="#B0F2B6"
+        />
+
+
+
+</LinearLayout>
