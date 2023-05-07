@@ -53,6 +53,7 @@ public class seconnecter extends MainActivity {
                         .apply();
                 Intent intent = new Intent(seconnecter.this,MainActivity.class); //intent= permet de passer d'une page a l'autre
                 startActivity(intent); //lance l'activite intent
+                this.finish();
             }
             else {
                 Toast.makeText(this, "Erreur", Toast.LENGTH_SHORT).show();
