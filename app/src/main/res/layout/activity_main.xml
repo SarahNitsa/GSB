@@ -18,15 +18,26 @@
         android:layout_height="wrap_content"
         android:text="Menu Principal"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="1dp"
         android:textColor="#000"
         android:textSize="30dp"
-         />    
+         />
+    <Button
+        android:id="@+id/main_button_deconnexion"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Déconnexion"
+        android:textColor="#000"
+        android:backgroundTint="#B0F2B6"
+        android:onClick="click_Menu"
+        />
 
     <Button
         android:id="@+id/main_button_FraisAuForfait"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:text="Frais au Forfait"
@@ -38,7 +49,7 @@
     <Button
         android:id="@+id/main_button_FraisHorsForfait"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:text="Frais hors Forfait"
@@ -50,7 +61,7 @@
     <Button
         android:id="@+id/main_button_SynthèseduMois"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:text="Synthèse du Mois"
@@ -62,7 +73,7 @@
     <Button
         android:id="@+id/main_button_Paramètres"
         android:layout_width="280dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
         android:text=" Paramètres"

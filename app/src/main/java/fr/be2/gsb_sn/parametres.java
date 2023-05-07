@@ -1,14 +1,14 @@
-package fr.be2.gsb;
+package fr.be2.gsb_sn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class mdpoublie extends AppCompatActivity {
+public class parametres extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mdpoublie);
+        setContentView(R.layout.activity_parametres);
     }
 }

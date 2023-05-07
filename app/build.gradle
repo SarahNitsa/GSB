@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'fr.be2.gsb'
+    namespace 'fr.be2.gsb_sn'
     compileSdk 32
 
     defaultConfig {
-        applicationId "fr.be2.gsb"
+        applicationId "fr.be2.gsb_sn"
         minSdk 21
         targetSdk 32
         versionCode 1
