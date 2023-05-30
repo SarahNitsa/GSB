@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GSB</string>
+    <string name="app_name">GSB SN</string>
     <string-array name="typeForfait">
         <item></item>
         <item>Forfait etape</item>
@@ -7,6 +7,9 @@
         <item>Nuits hotel</item>
         <item>Repas</item>
         <item>Petit dejeuner</item>
+        <item>Festival de la biere</item>
+        <item>Voyage aerien</item>
+
     </string-array>
     <string-array name="MesValeur">
         <item>0</item>
@@ -16,5 +19,7 @@
         <item>50</item>
         <item>20</item>
         <item>12.5</item>
+        <item>50</item>
+        <item>300</item>
     </string-array>
 </resources>

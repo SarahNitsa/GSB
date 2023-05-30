@@ -13,6 +13,13 @@
         android:theme="@style/Theme.GSB"
         tools:targetApi="31">
         <activity
+            android:name=".listeforfais"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".consulterfrais"
             android:exported="false">
             <meta-data
@@ -20,21 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SyntheseDuMois"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".fraisauforfais"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".mdpoublie"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

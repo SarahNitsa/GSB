@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <include layout="@layout/entete" />
+    <!--image créer en entete-->
+
+
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_margin="8dp"
-        android:padding="32dp"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:background="#0080BA"
-        android:textColor="@color/white"
-        android:text="Consulter les frais"/>
+        android:layout_marginTop="30dp"
+        android:text="Consulter les frais"
+        android:textColor="#000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/entete"/>
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -31,6 +37,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="saisir le filtre">
+
         <requestFocus />
     </EditText>
 

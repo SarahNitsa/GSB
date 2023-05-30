@@ -16,7 +16,7 @@
         android:labelFor="@+id/TV_fraishorsforfais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Frais hors forfais"
+        android:text="Frais hors forfait"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:textColor="#000"
@@ -26,12 +26,12 @@
         android:labelFor="@+id/TV_libelleFHF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:text="Libellé"
         android:textSize="20dp"
         android:textColor="#B0F2B6"
         android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="48dp"
-        tools:text="Libellé"
         />
     <EditText
         android:id="@+id/libelleFHF"
@@ -50,7 +50,7 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text=" Montant"/>
+        android:text=" Montant"/>
 
     <EditText
         android:id="@+id/montantFHF"
@@ -61,7 +61,10 @@
         android:textColor="#B0F2B6"
         android:hint="Saisir un montant"
         />
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
     <TextView
         android:labelFor="@+id/TV_dateFHF"
         android:layout_width="wrap_content"
@@ -70,7 +73,7 @@
         android:textColor="#B0F2B6"
         android:textSize="20dp"
         android:textStyle="bold"
-        tools:text=" Date" />
+        android:text=" Date" />
 
 
     <EditText
@@ -80,35 +83,23 @@
         android:hint="format JJ/MM/AAAA"
         android:inputType="date"
         />
-
-    <LinearLayout
+    <ImageButton
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:orientation="horizontal"
-        tools:context=".fraishorsforfaits"
-        >
+        android:layout_height="match_parent"
+        android:onClick="ShowCal"
+        android:src="@android:drawable/ic_menu_day"></ImageButton>
+    </LinearLayout>
     <Button
-        android:id="@+id/main_button_modifier"
+        android:id="@+id/btn_ajouterFHF"
         android:layout_width="150dp"
         android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        android:text="Modifier"
+        android:text="Valider"
         android:textColor="#000"
         android:layout_margin="40dp"
         android:backgroundTint="#D3D3D3"
+        android:onClick="AjouterFHF"
         />
-    <Button
-        android:id="@+id/main_button_supprimer"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
-        android:layout_margin="8dp"
-        android:text="Supprimer"
-        android:textColor="#000"
-        android:backgroundTint="#D3D3D3"
-        />
-    </LinearLayout>
+
     </LinearLayout >

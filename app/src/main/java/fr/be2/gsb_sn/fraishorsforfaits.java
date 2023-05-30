@@ -20,7 +20,7 @@ public class fraishorsforfaits extends MainActivity {
     EditText libelle;
     Button btnAjouter;
     EditText montant;
-    TextView date;
+    EditText date;
     SQLHelper database;
     DatePickerDialog picker;
     Calendar calendrier = Calendar.getInstance(); //on declare une classe d'un calendrier qui existe deja
@@ -36,13 +36,13 @@ public class fraishorsforfaits extends MainActivity {
         database = new SQLHelper(this);
         libelle = findViewById(R.id.libelleFHF);
         montant = findViewById(R.id.montantFHF);
-        date= findViewById(R.id.date);
-        btnAjouter = findViewById(R.id.main_button_Ajouter);
+        date= findViewById(R.id.DateFHF);
+        btnAjouter = findViewById(R.id.btn_ajouterFHF);
     }
 
     public void AjouterFHF(View view){
         switch (view.getId()){
-            case R.id.main_button_Ajouter:
+            case R.id.btn_ajouterFHF:
 
                 if(montant.getText().toString().trim().length() == 0  || libelle.getText().toString().trim().length() == 0  || date.length()==0) { //test si les champs
                     // libelle, montant et date sont renseignes

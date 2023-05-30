@@ -29,6 +29,7 @@ public class fraisauforfais extends MainActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fraisauforfais);
+
         database= new SQLHelper(this);
 
         textQuantite1=findViewById(R.id.qte);
@@ -47,7 +48,7 @@ public class fraisauforfais extends MainActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 // This is where we'll check the user input
-                Integer q1 = Integer.parseInt(String.valueOf("0"+textQuantite1.getText()));
+                Integer q1 = Integer.parseInt(String.valueOf("0"+ textQuantite1.getText()));
                 //String f1 = listeForfait1.getSelectedItem().toString();
                 int posF1 = listeForfait1.getSelectedItemPosition();
                 Float s1 = q1 * Float.parseFloat(valeurs[posF1]);

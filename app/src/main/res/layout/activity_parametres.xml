@@ -34,7 +34,7 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text="Nom:"/>
+        android:text="Nom:"/>
 
     <EditText
         android:id="@+id/nomparametres"
@@ -53,7 +53,7 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text="Prénom:"/>
+        android:text="Prénom:"/>
 
     <EditText
         android:id="@+id/prenomparametres"
@@ -72,7 +72,7 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text="Code visiteur"/>
+        android:text="Code visiteur"/>
 
     <EditText
         android:id="@+id/codevisiteur"
@@ -91,35 +91,16 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text="Mail"/>
+        android:text="Mail"/>
 
     <EditText
-        android:id="@+id/mailparametres"
+        android:id="@+id/TV_mailparametres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:layout_marginLeft="7dp"
         android:textColor="#B0F2B6"
         android:hint="Saisir votre mail"
-        />
-    <TextView
-        android:labelFor="@+id/TV_mdpparametres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="#B0F2B6"
-        android:textStyle="bold"
-        android:layout_marginLeft="10dp"
-        tools:text="Mot de passe"/>
-
-    <EditText
-        android:id="@+id/mdpparametres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:layout_marginLeft="7dp"
-        android:textColor="#B0F2B6"
-        android:hint="Saisir votre mdp"
         />
     <TextView
         android:labelFor="@+id/TV_urlserveurparametres"
@@ -129,7 +110,7 @@
         android:textColor="#B0F2B6"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
-        tools:text=" Url serveur"/>
+        android:text=" Url serveur"/>
 
     <EditText
         android:id="@+id/urlserveur"
@@ -149,6 +130,7 @@
         android:text=" Confirmer"
         android:textColor="#000"
         android:backgroundTint="#B0F2B6"
+        android:onClick="Ajouter_info_v"
         />
 
 

@@ -9,11 +9,14 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Intent intent;
     Context context;
     EditText codevisiteur;
+    String nomUtilisateur;
+    TextView nomComplet;
     private static final String MONFICHIER = "GSB_PREF_USER";
 
     @Override
@@ -21,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         secure();
         setContentView(R.layout.activity_main);
+
     }
 
     public void click_Menu(View vue) {
-        String MSG = "";
+        //String MSG = "";
         switch (vue.getId()) {
             case R.id.main_button_FraisAuForfait:
                 intent = new Intent(MainActivity.this, fraisauforfais.class);
@@ -35,19 +39,24 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case R.id.main_button_SynthèseduMois:
-                intent = new Intent(MainActivity.this, SyntheseDuMois.class);
+                intent = new Intent(MainActivity.this, consulterfrais.class);
                 break;
             case R.id.main_button_Paramètres:
                 intent = new Intent(MainActivity.this, parametres.class);
                 break;
+
+
             case R.id.main_button_deconnexion:
-                intent = new Intent(MainActivity.this, mdpoublie.class);
-                SharedPreferences settings = context.getSharedPreferences("PreferencesName", Context.MODE_PRIVATE);
-                settings.edit().clear().commit();
-                break;
+                getSharedPreferences(MONFICHIER, MODE_PRIVATE)
+                        .edit()
+                        .clear()
+                        .commit();
+                intent = new Intent(MainActivity.this, seconnecter.class);
 
         }
         startActivity(intent);
+
+
     }
 
     //Toast.makeText(this, MSG, Toast.LENGTH_SHORT).show();
@@ -55,11 +64,14 @@ public class MainActivity extends AppCompatActivity {
 
         this.finish();
     }
+
+
     public void secure(){
         String cvisiteur =getSharedPreferences("GSB_PREF_USER", MODE_PRIVATE).getString("CodeVisiteur","pas authentifie");
         if (cvisiteur.equals("pas authentifie")) {
-            Intent intent = new Intent(MainActivity.this,mdpoublie.class);
+            Intent intent = new Intent(MainActivity.this,seconnecter.class);
             startActivity(intent);
+            //this.finish();
         }
 
     }
@@ -71,6 +83,8 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
 
     }
+
+
 
 }
 

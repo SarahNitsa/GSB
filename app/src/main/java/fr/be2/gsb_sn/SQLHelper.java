@@ -113,6 +113,7 @@ public class SQLHelper extends SQLiteOpenHelper {
 
         return Sql.insert(DB_TABLE, null, initialValues);
     }
+    //connexion a la BD
     public SQLHelper open() throws SQLException {
 
         SQLiteDatabase db =this.getWritableDatabase();
@@ -133,27 +134,15 @@ public class SQLHelper extends SQLiteOpenHelper {
 
 
     public Cursor fetchAllFrais() {
-
-        Cursor mCursor = Sql.query(DB_TABLE, new String[] {ID_FRAIS,
-                        TYPEFRAIS, QUANTITE, DATEFRAIS},
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor mCursor = db.query(DB_TABLE, new String[] {"rowid _id",ID_FRAIS,
+                        TYPEFRAIS, QUANTITE, DATEFRAIS,MONTANT,LIBELLE},
                 null, null, null, null, null);
 
         if (mCursor != null) {
             mCursor.moveToFirst();
         }
         return mCursor;
-    }
-
-    public void insertSomeFrais() {
-
-        createFrais("01585686","Petit dejeuné", "5", "01/01/2017");
-        createFrais("01456895","Nuité Hotel", "20", "01/03/2017");
-        createFrais("01514578","Nuité Hotel", "15", "01/04/2017");
-        createFrais("01531586","Forfait etape", "6", "26/01/2017");
-        createFrais("01467983","Repas restaurant", "2", "29/01/2017");
-        createFrais("01245876","Petit dejeuné", "4", "07/09/2017");
-        createFrais("01542571","Forfait etape", "17", "16/05/2017");
-
     }
 
 
@@ -168,5 +157,13 @@ public class SQLHelper extends SQLiteOpenHelper {
         }
         return Cursor;
     }
+    public Cursor viewData() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "select * from " + DB_TABLE;
+        //cursor: type, pointeur: pr parcourir les lignes ds les resultats de la requete. Null car pas de where
+        Cursor pointeur = db.rawQuery(query, null);
+        return pointeur;}
 
-}
+
+
+    }

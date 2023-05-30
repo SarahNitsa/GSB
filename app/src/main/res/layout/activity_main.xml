@@ -39,7 +39,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Frais au Forfait"
         android:textColor="#000"
         android:backgroundTint="#B0F2B6"
@@ -51,7 +51,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Frais hors Forfait"
         android:textColor="#000"
         android:backgroundTint="#B0F2B6"
@@ -63,7 +63,7 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Synthèse du Mois"
         android:textColor="#000"
         android:backgroundTint="#B0F2B6"
@@ -75,12 +75,13 @@
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text=" Paramètres"
         android:textColor="#000"
         android:backgroundTint="#B0F2B6"
         android:onClick="click_Menu"
         />
+
 
 
 

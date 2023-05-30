@@ -33,21 +33,23 @@
 
         <TextView
             android:id="@+id/TV_typedeforfais"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:padding="9dp"
-            android:textSize="15dp"
-            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:padding="4dp"
+            android:text="Type du forfait :"
             android:textColor="#B0F2B6"
-            tools:text="Type de forfais:"/>
+            android:textSize="20sp"
+            />
 
         <Spinner
             android:id="@+id/spinnefraisauforfait"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:background="#D3D3D3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E41AA"
             android:entries="@array/typeForfait"
-            android:padding="20dp" />
+            android:minHeight="48dp" />
+
     </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -58,7 +60,7 @@
             android:labelFor="@+id/TV_QuantiteForfait"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:layout_marginLeft="7dp"
             android:textColor="#B0F2B6"
@@ -78,7 +80,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/somme"
@@ -86,20 +88,16 @@
             android:layout_height="wrap_content"
             android:text=""/>
 
-        <LinearLayout
-            android:layout_width="245dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
 
             <TextView
+                android:labelFor="@+id/TV_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="7dp"
-                android:labelFor="@+id/TV_date"
-                android:textColor="#B0F2B6"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                tools:text="Date:" />
+                android:layout_marginLeft="7dp"
+                android:textColor="#B0F2B6"
+                android:text="Date:" />
 
             <TextView
                 android:id="@+id/DateFrais"
@@ -113,7 +111,7 @@
                 android:layout_height="match_parent"
                 android:onClick="ShowCal"
                 android:src="@android:drawable/ic_menu_day"></ImageButton>
-        </LinearLayout>
+
     </LinearLayout>
 
         <Button
